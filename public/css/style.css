@@ -1,0 +1,114 @@
+:root {
+    --button-color: #a66b6b;
+    --input-border-color: #E5E7EB;
+    --primary-color: #ffffff;
+    --secodary-color: rgb(241, 241, 241);
+     font-family: Roboto, Arial;
+}
+
+body {
+    display: flex;
+    margin: 0; padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #623939;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    flex-basis: 40vw;
+    position: relative;
+    background-image: url('/public/images/sideimg.avif');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo-container {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    width: 100%;   
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 20px;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+.logo-container h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-family: Darumadrop One;
+}
+
+.image-container p {
+    position: absolute;
+    bottom: 20px;
+    color: var(--primary-color);
+    right: 35%;
+}
+
+.form-container {
+    width: 60vw ;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--secodary-color);
+}
+
+.form-container fieldset {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    margin: 0;
+    padding: 50px 50px;
+
+}
+
+input {
+    width: 250px; height: 15px;
+    padding: 10px 12px;
+    border: var(--input-border-color) 1px solid;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(51, 51, 233);
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.form-container form button {
+    background-color: var(--button-color);
+    padding: 12px 30px;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+label {
+    display: block;
+}
+
+h2, p {
+    margin-left: 30px;
+}
